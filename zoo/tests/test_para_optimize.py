@@ -2,14 +2,8 @@
 import unittest
 import numpy as np
 import pandas as pd
-import csv
-from sklearn.model_selection import train_test_split, GridSearchCV
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn import svm
-from sklearn.linear_model import LogisticRegression
-from src.para_optimize import para_optimize
-from src.pre_processing import *
+from zoo.src.zoo.para_optimize import *
+
 
 # Create simple datasets for the tests
 dummy_data1 = [[1,2,3,4,5,0],[2,3,4,1,2,0], [1,1,3,4,5,0], [1,1,2,3,4,1],[2,3,5,4,1,1], [4,5,6,3,2,1], [2,3,4,2,1,0], [1,2,1,2,4,1]]
