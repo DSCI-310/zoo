@@ -38,9 +38,9 @@ expected_lr = LogisticRegression(C=0.07, solver='sag').fit(X, y)
 
 
 def test_knn():
-    actual_knn_1 = finalModel("KNN", 1, X_train, X_test, y_train, y_test, X, y)
-    actual_knn_2 = finalModel("KNN", 2, X_train, X_test, y_train, y_test, X, y)
-    actual_knn_3 = finalModel("KNN", 3, X_train, X_test, y_train, y_test, X, y)
+    actual_knn_1 = final_Model("KNN", 1, X_train, X_test, y_train, y_test, X, y)
+    actual_knn_2 = final_Model("KNN", 2, X_train, X_test, y_train, y_test, X, y)
+    actual_knn_3 = final_Model("KNN", 3, X_train, X_test, y_train, y_test, X, y)
 
     if expected_knn_1.__eq__(actual_knn_1) and expected_knn_2.__eq__(actual_knn_2) and expected_knn_3.__eq__(
             actual_knn_3):
@@ -50,9 +50,9 @@ def test_knn():
 
 
 def test_dt():
-    actual_dt_1 = finalModel("DT", 5, X_train, X_test, y_train, y_test, X, y)
-    actual_dt_2 = finalModel("DT", 4, X_train, X_test, y_train, y_test, X, y)
-    actual_dt_3 = finalModel("DT", 20, X_train, X_test, y_train, y_test, X, y)
+    actual_dt_1 = final_Model("DT", 5, X_train, X_test, y_train, y_test, X, y)
+    actual_dt_2 = final_Model("DT", 4, X_train, X_test, y_train, y_test, X, y)
+    actual_dt_3 = final_Model("DT", 20, X_train, X_test, y_train, y_test, X, y)
 
     if expected_dt_1.__eq__(actual_dt_1) and expected_dt_2.__eq__(actual_dt_2) and expected_dt_3.__eq__(actual_dt_3):
         assert True
@@ -61,7 +61,7 @@ def test_dt():
 
 
 def test_svm():
-    actual_svm = finalModel("SVM", -1, X_train, X_test, y_train, y_test, X, y)
+    actual_svm = final_Model("SVM", -1, X_train, X_test, y_train, y_test, X, y)
     if expected_svm.__eq__(actual_svm):
         assert True
     else:
@@ -69,7 +69,7 @@ def test_svm():
 
 
 def test_lr():
-    actual_lr = finalModel("LR", -1, X_train, X_test, y_train, y_test, X, y)
+    actual_lr = final_Model("LR", -1, X_train, X_test, y_train, y_test, X, y)
     if expected_lr.__eq__(actual_lr):
         assert True
     else:
@@ -78,7 +78,7 @@ def test_lr():
 
 def test_none():
     expected = "Invalid model algorthm or model is not supported yet"
-    actual = finalModel("ASA", -1, X_train, X_test, y_train, y_test, X, y)
+    actual = final_Model("ASA", -1, X_train, X_test, y_train, y_test, X, y)
     if actual == expected:
         assert True
     else:

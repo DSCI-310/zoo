@@ -13,7 +13,7 @@ import numpy as np
 # ' @examples
 # ' para_optimize(yhat, y_test, 10)
 
-def stdAcc(yhat, y_test, Ks):
+def std_Acc(yhat, y_test, Ks):
     std_acc = np.zeros((Ks - 1))
 
     for n in range(1, Ks):

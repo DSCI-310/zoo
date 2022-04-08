@@ -35,15 +35,15 @@ for n in range(1, 50):
     std_acc_expected[n - 1] = np.std(yhat == y_test) / np.sqrt(yhat.shape[0])
 
 
-def test_stdacc():
-    std_acc = stdAcc(yhat, y_test, 50)
+def test_std_Acc():
+    std_acc = std_Acc(yhat, y_test, 50)
     if pd.DataFrame(std_acc).equals(pd.DataFrame(std_acc_expected)):
         assert True
     else:
         assert False
 
-# class TestStdAcc(unittest.TestCase):
-#     def test_stdAcc(self):
-#         std_acc_generated = stdAcc(yhat, y_test, 50)
+# class Teststd_Acc(unittest.TestCase):
+#     def test_std_Acc(self):
+#         std_acc_generated = std_Acc(yhat, y_test, 50)
 #         for i in range(1, 50):
 #             self.assertEqual(std_acc[i], std_acc_generated[i])

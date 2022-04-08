@@ -9,16 +9,15 @@ from sklearn.tree import DecisionTreeClassifier
 
 
 
-def finalModel(algorithm, threshold, X_train, X_test, y_train, y_test, X, y):
-    """
-    this method creates the final model of the algorithms specified
-    :param algorithm: algorithm of the model
-    :param threshold: threshold for the algorthm like depth, n_neighbors
-    :param X_train: x train data
-    :param X_test: x test data
-    :param y_train: y train data
-    :param y_test: y test data
-    """
+# ' this method creates the final model of the algorithms specified
+# ' param algorithm: algorithm of the model
+# ' param threshold: threshold for the algorthm like depth, n_neighbors
+# ' param X_train: x train data
+# ' param X_test: x test data
+# ' param y_train: y train data
+# ' param y_test: y test data
+def final_Model(algorithm, threshold, X_train, X_test, y_train, y_test, X, y):
+
 
     if algorithm.lower().strip() == "svm":
         svec = svm.SVC(kernel='poly')

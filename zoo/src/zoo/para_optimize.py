@@ -25,11 +25,14 @@ from sklearn import svm
 from sklearn.linear_model import LogisticRegression
 
 def para_optimize(mod, params, n, X_train, y_train):
-    if isinstance(mod, KNeighborsClassifier)|isinstance(mod,DecisionTreeClassifier)|isinstance(mod,svm.SVC)|isinstance(mod,LogisticRegression):
-        grid = GridSearchCV(mod, params, cv=n, scoring='accuracy')
-        grid.fit(X_train, y_train)
-        best = grid.best_params_
-        return best
+    if n > 1:
+        if isinstance(mod, KNeighborsClassifier)|isinstance(mod,DecisionTreeClassifier)|isinstance(mod,svm.SVC)|isinstance(mod,LogisticRegression):
+            grid = GridSearchCV(mod, params, cv=n, scoring='accuracy')
+            grid.fit(X_train, y_train)
+            best = grid.best_params_
+            return best
+        else:
+            return("The model is invalid.")
     else:
-        return("The model is invalid.")
+        return("The number of folder is invalid.")
 
