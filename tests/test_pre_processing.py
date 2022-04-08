@@ -1,4 +1,4 @@
-from zoo.src.zoo.pre_processing import *
+from src.zoo.pre_processing import *
 import pandas as pd
 
 link = "https://raw.githubusercontent.com/poddarswakhar/dump/main/zoo.data"

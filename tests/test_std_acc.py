@@ -3,7 +3,7 @@ import statsmodels.api as sm
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 
-from zoo.src.zoo.std_acc import *
+from src.zoo.std_acc import *
 
 dataset_iris = sm.datasets.get_rdataset(dataname='iris', package='datasets')
 df_iris = dataset_iris.data

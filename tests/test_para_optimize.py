@@ -2,7 +2,7 @@
 import unittest
 import numpy as np
 import pandas as pd
-from zoo.src.zoo.para_optimize import *
+from src.zoo.para_optimize import *
 
 
 # Create simple datasets for the tests

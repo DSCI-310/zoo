@@ -1,6 +1,6 @@
 from sklearn.model_selection import train_test_split
-from zoo.src.zoo.train_and_predict_model import *
-from zoo.src.zoo.pre_processing import pre_process
+from src.zoo.train_and_predict_model import *
+from src.zoo.pre_processing import pre_process
 
 header = ["animalName", "hair", "feathers", "eggs", "milk", "airborne", "aquatic",
           "predator", "toothed", "backbone", "breathes", "venomous", "fins",
