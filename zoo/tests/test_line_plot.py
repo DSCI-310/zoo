@@ -1,8 +1,7 @@
 import pytest
 import matplotlib
-import matplotlib.pyplot as plt
 import numpy as np
-from src.line_plot import *
+from zoo.src.zoo import line_plot
 
 Ks = 10
 mean = np.zeros((Ks-1))
