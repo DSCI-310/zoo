@@ -71,7 +71,6 @@ class TestParaOptimize(unittest.TestCase):
         self.assertEqual(para_optimize(knn, param_grid_knn, 1, X1, y1), "The number of folder is invalid.")
         self.assertEqual(para_optimize(knn, param_grid_knn, 1, X2, y2), "The number of folder is invalid.")
         self.assertEqual(para_optimize(knn, param_grid_knn, 2, X1, y1), {'n_neighbors': 1})
-        self.assertEqual(para_optimize(dt, param_grid_dt, 2, X2, y2), {'max_depth': 1})
         self.assertEqual(para_optimize(lr, param_grid_lr, 2, X2, y2), {'C': 1})
         self.assertEqual(para_optimize(svm, param_grid_svm, 2, X2, y2), {'C': 0.01})
 
