@@ -8,6 +8,11 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9.7"
+matplotlib = "^3.5.1"
+pandas = "^1.4.1"
+scikit-learn = "^1.0.2"
+numpy = "^1.22.2"
+pytest = "^7.0.1"
 
 [tool.poetry.dev-dependencies]
 [tool.semantic_release]
