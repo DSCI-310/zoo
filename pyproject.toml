@@ -16,6 +16,12 @@ pandas = "^1.4.1"
 scikit-learn = "^1.0.2"
 numpy = "^1.22.2"
 pytest = "^7.0.1"
+pytest-cov = "*"
+statsmodels = "*"
+sphinx = "*"
+myst-nb = "*"
+sphinx-autoapi = "*"
+sphinx-rtd-theme = "*"
 
 [tool.poetry.dev-dependencies]
 [tool.semantic_release]
