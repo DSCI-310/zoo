@@ -20,7 +20,7 @@ pytest-cov = "*"
 statsmodels = "*"
 sphinx = "*"
 myst-nb = "*"
-autoapi = "*"
+sphinx-autoapi = "*"
 
 [tool.poetry.dev-dependencies]
 [tool.semantic_release]
