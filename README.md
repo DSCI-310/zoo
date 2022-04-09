@@ -40,7 +40,7 @@ Interested in contributing? Check out the [contributing guidelines](CONTRIBUTING
 
 ## License
 
-`zoo` was created by DSCI310-2021W2-Group7 (Authors: ). It is licensed under the terms of the MIT license, see [liscense](LICENSE.md).
+`zoo` was created by DSCI310-2021W2-Group7. It is licensed under the terms of the MIT license, see [liscense](LICENSE.md).
 
 ## Credits
 
