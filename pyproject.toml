@@ -18,7 +18,7 @@ numpy = "^1.22.2"
 pytest = "^7.0.1"
 pytest-cov = "*"
 statsmodels = "*"
-sphinx = "*'
+sphinx = "*"
 
 [tool.poetry.dev-dependencies]
 [tool.semantic_release]
