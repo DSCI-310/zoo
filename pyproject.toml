@@ -5,6 +5,9 @@ description = "Package created for dsci_310 zoo analysis"
 authors = ["Group_7"]
 license = "MIT"
 readme = "README.md"
+packages = [
+    { include = "src/zoo"  }
+]
 
 [tool.poetry.dependencies]
 python = "^3.9.7"
@@ -29,3 +32,7 @@ patch_without_tag = true                    # patch release by default
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+packages = [
+    { include = "src/zoo/line_plot.py"  }
+]
