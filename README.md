@@ -21,6 +21,8 @@ pre_process is a function which downloads the data from the link without header 
 
 para_optimize is a function which optimizes hyper-parameters for a model, e.g. para_optimize(knn, param_grid, 5).
 
+Detail information see [examples](docs/example.ipynb).
+
 TODO
 
 
