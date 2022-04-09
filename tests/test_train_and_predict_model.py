@@ -1,6 +1,7 @@
 from sklearn.model_selection import train_test_split
 from src.zoo.train_and_predict_model import *
 from src.zoo.pre_processing import pre_process
+import statsmodels.api as sm
 
 dataset_iris = sm.datasets.get_rdataset(dataname='iris', package='datasets')
 df_iris = dataset_iris.data
