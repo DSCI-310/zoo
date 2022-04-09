@@ -2,21 +2,16 @@ from sklearn.model_selection import train_test_split
 from src.zoo.train_and_predict_model import *
 from src.zoo.pre_processing import pre_process
 
-header = ["animalName", "hair", "feathers", "eggs", "milk", "airborne", "aquatic",
-          "predator", "toothed", "backbone", "breathes", "venomous", "fins",
-          "legs", "tail", "domestic", "catsize", "type"]
-
-zoo_data = pre_process("https://archive.ics.uci.edu/ml/machine-learning-databases/zoo/zoo.data", header)
+dataset_iris = sm.datasets.get_rdataset(dataname='iris', package='datasets')
+df_iris = dataset_iris.data
 
 # features aka X
-feature = zoo_data[["hair", "feathers", "eggs", "milk", "airborne",
-                    "aquatic", "predator", "toothed", "backbone", "breathes",
-                    "venomous", "fins", "legs", "tail", "domestic", "catsize"]]
+feature = df_iris[["Sepal.Length", "Sepal.Width", "Petal.Length", "Petal.Width"]]
 # making it as a X
 X = feature
 
 # y
-y = zoo_data['type']
+y = df_iris["Species"]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=4)
 
