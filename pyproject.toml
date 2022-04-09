@@ -21,6 +21,7 @@ statsmodels = "*"
 sphinx = "*"
 myst-nb = "*"
 sphinx-autoapi = "*"
+sphinx-rtd-theme = "*"
 
 [tool.poetry.dev-dependencies]
 [tool.semantic_release]
