@@ -1,5 +1,4 @@
 import pandas as pd
-import statsmodels.api as sm
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 
