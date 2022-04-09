@@ -17,7 +17,7 @@ scikit-learn = "^1.0.2"
 numpy = "^1.22.2"
 pytest = "^7.0.1"
 pytest-cov = "*"
-statsmodels = "^0.13.2"
+statsmodels = "*"
 
 [tool.poetry.dev-dependencies]
 [tool.semantic_release]
