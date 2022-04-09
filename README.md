@@ -1,29 +1,37 @@
 # zoo
 
-Package created for DSCI_310 zoo analysis including five useful functions: [line_plot](src/zoo/line_plot.py), [final_Model](src/zoo/train_and_predict_model.py), [std_Acc](src/zoo/std_acc.py), 
+Package created for DSCI310-2021W2-Group7 zoo analysis including five useful functions: [line_plot](src/zoo/line_plot.py), [final_Model](src/zoo/train_and_predict_model.py), [std_acc](src/zoo/std_acc.py), 
 [pre_processing](src/zoo/pre_processing.py) and [para_optimize](src/zoo/para_optimize.py).
 
 ## Installation
 
 ```bash
-$ pip install zoo
+pip install zoo
 ```
 
 ## Usage
 
-line_plot is a function which plots a linear relationship, e.g. line_plot(Ks, mean, std, "x-axis", "y-axis", "population distribution").
+1. `line_plot` is a function which plots a linear relationship.
 
-final_Model is a function which creates the final model of the specific algorithm, e.g. final_Model(algorithm, threshold, X_train, X_test, y_train, y_test, X, y).
+   Example: `line_plot(Ks, mean, std, "x-axis", "y-axis", "population distribution")`
 
-std_Acc is a function which generates the standard deviation of predicted array and observed array associated with each k value, e.g. std_Acc(yhat, y_test, 10).
+2. `final_Model` is a function which creates the final model of the specific algorithm.
 
-pre_process is a function which downloads the data from the link without header and add the desired header to the data, e.g. pre_process(link, header).
+   Example:  `final_Model(algorithm, threshold, X_train, X_test, y_train, y_test, X, y)`
 
-para_optimize is a function which optimizes hyper-parameters for a model, e.g. para_optimize(knn, param_grid, 5).
+3. `std_acc` is a function which generates the standard deviation of predicted array and observed array associated with each k value.
 
-Detail information see [examples](docs/example.ipynb).
+   Example: ` std_Acc(yhat, y_test, 10)`
 
-TODO
+4. `pre_process` is a function which downloads the data from the link without header and add the desired header to the data.
+
+   Example: `pre_process(link, header)`
+
+5. `para_optimize` is a function which optimizes hyper-parameters for a model.
+
+   Example: `para_optimize(knn, param_grid, 5)`
+
+Detail information see file [examples](docs/example.ipynb).
 
 
 ## Contributing
@@ -32,7 +40,7 @@ Interested in contributing? Check out the [contributing guidelines](CONTRIBUTING
 
 ## License
 
-`zoo` was created by Group_7. It is licensed under the terms of the MIT license， see [liscense](LICENSE.md).
+`zoo` was created by DSCI310-2021W2-Group7. It is licensed under the terms of the MIT license, see [liscense](LICENSE.md).
 
 ## Credits
 
