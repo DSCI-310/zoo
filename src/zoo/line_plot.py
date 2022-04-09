@@ -29,4 +29,3 @@ def line_plot(k, mean, std, x, y, name):
     plt.tight_layout()
 
     return fig
-    # plt.show()
