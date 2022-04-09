@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-
+import numpy as np
 
 # ' Plot a linear relationship
 # '
@@ -19,13 +19,18 @@ import matplotlib.pyplot as plt
 # ' @examples
 # ' line_plot(Ks, mean, std, "x-axis", "y-axis", "population distribution")
 def line_plot(k, mean, std, x, y, name):
-    fig = plt.figure()
-    plt.plot(range(1, k), mean, 'g')
-    plt.fill_between(range(1, k), mean - 1 * std, mean + 1 * std, alpha=0.10)
-    plt.legend(('Accuracy ', '+/- 3xstd'))
-    plt.xlabel(x)
-    plt.ylabel(y)
-    plt.title(name)
-    plt.tight_layout()
+    if k < 1:
+        return("wrong value for K")
+    if isinstance(k, int) & isinstance(mean, np.ndarray) & isinstance(std, np.ndarray) & isinstance(x, str) & isinstance(y, str) & isinstance(name, str):
+        fig = plt.figure()
+        plt.plot(range(1, k), mean, 'g')
+        plt.fill_between(range(1, k), mean - 1 * std, mean + 1 * std, alpha=0.10)
+        plt.legend(('Accuracy ', '+/- 3xstd'))
+        plt.xlabel(x)
+        plt.ylabel(y)
+        plt.title(name)
+        plt.tight_layout()
+    else:
+        return("wrong type of input")
 
     return fig
