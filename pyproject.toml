@@ -19,6 +19,7 @@ pytest = "^7.0.1"
 pytest-cov = "*"
 statsmodels = "*"
 sphinx = "*"
+myst-nb = "*"
 
 [tool.poetry.dev-dependencies]
 [tool.semantic_release]
