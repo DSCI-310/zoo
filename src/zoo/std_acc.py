@@ -1,6 +1,3 @@
-import numpy as np
-
-
 # ' generate standard deviation of predicted array and observed array associated with each k
 # '
 # '
@@ -13,9 +10,14 @@ import numpy as np
 # ' @examples
 # ' para_optimize(yhat, y_test, 10)
 
-def std_Acc(yhat, y_test, Ks):
-    std_acc = np.zeros((Ks - 1))
+import numpy as np
 
-    for n in range(1, Ks):
-        std_acc[n - 1] = np.std(yhat == y_test) / np.sqrt(yhat.shape[0])
-    return std_acc
+def std_acc(yhat, y_test, Ks):
+    if isinstance(Ks, int):
+        std_acc = np.zeros((Ks - 1))
+
+        for n in range(1, Ks):
+            std_acc[n - 1] = np.std(yhat == y_test) / np.sqrt(yhat.shape[0])
+        return std_acc
+    else:
+        return ("The input 'Ks' must be an integer greater than 1.")
