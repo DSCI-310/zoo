@@ -6,7 +6,7 @@ Package created for DSCI310-2021W2-Group7 zoo analysis including five useful fun
 ## Installation
 
 ```bash
-pip install zoo
+pip install git+https://github.com/DSCI-310/zoo
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ pip install zoo
 
 3. `std_acc` is a function which generates the standard deviation of predicted array and observed array associated with each k value.
 
-   Example: ` std_Acc(yhat, y_test, 10)`
+   Example: ` std_acc(yhat, y_test, 10)`
 
 4. `pre_process` is a function which downloads the data from the link without header and add the desired header to the data.
 
